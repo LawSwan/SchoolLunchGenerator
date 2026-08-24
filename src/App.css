@@ -1,0 +1,83 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fff7d6 0%, #ffd6a5 100%);
+  padding: 32px 16px;
+}
+
+.lunch-card {
+  width: min(760px, 100%);
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 28px;
+  box-shadow: 0 18px 40px rgba(124, 74, 18, 0.18);
+  padding: 32px 28px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 12px;
+  font-weight: 700;
+  color: #d9781b;
+}
+
+h1 {
+  margin: 12px 0 28px;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #3d2a1c;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.menu-item {
+  background: #fffaf1;
+  border: 2px solid #f7d7a8;
+  border-radius: 18px;
+  padding: 18px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.category-label {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8b5e34;
+}
+
+.menu-item strong {
+  font-size: 1.1rem;
+  color: #2f2a27;
+}
+
+.generate-button {
+  border: none;
+  border-radius: 999px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #ff9f43, #f76b1c);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 10px 20px rgba(247, 107, 28, 0.25);
+}
+
+.generate-button:hover {
+  transform: translateY(-2px);
+}
+
+.generate-button:active {
+  transform: translateY(0);
+}
