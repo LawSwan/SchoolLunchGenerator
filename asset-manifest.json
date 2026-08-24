@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/schoollunchgenerator/static/css/main.5cafa1f4.css",
-    "main.js": "/schoollunchgenerator/static/js/main.88eb2d82.js",
-    "static/js/453.f94d9002.chunk.js": "/schoollunchgenerator/static/js/453.f94d9002.chunk.js",
-    "index.html": "/schoollunchgenerator/index.html",
-    "main.5cafa1f4.css.map": "/schoollunchgenerator/static/css/main.5cafa1f4.css.map",
-    "main.88eb2d82.js.map": "/schoollunchgenerator/static/js/main.88eb2d82.js.map",
-    "453.f94d9002.chunk.js.map": "/schoollunchgenerator/static/js/453.f94d9002.chunk.js.map"
+    "main.css": "/SchoolLunchGenerator/static/css/main.9ca69adc.css",
+    "main.js": "/SchoolLunchGenerator/static/js/main.59ec59a5.js",
+    "static/js/453.f94d9002.chunk.js": "/SchoolLunchGenerator/static/js/453.f94d9002.chunk.js",
+    "index.html": "/SchoolLunchGenerator/index.html",
+    "main.9ca69adc.css.map": "/SchoolLunchGenerator/static/css/main.9ca69adc.css.map",
+    "main.59ec59a5.js.map": "/SchoolLunchGenerator/static/js/main.59ec59a5.js.map",
+    "453.f94d9002.chunk.js.map": "/SchoolLunchGenerator/static/js/453.f94d9002.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cafa1f4.css",
-    "static/js/main.88eb2d82.js"
+    "static/css/main.9ca69adc.css",
+    "static/js/main.59ec59a5.js"
   ]
 }
