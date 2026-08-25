@@ -7,10 +7,10 @@ const foodCategories = {
     'Cheese quesadilla',
     'Chicken nuggets',
     'Hard-boiled eggs',
-    'Hummus',
-    'Black beans',
+    'Hummus and pita',
+    'Black beans and rice ',
     'Peanut-free butter sandwich',
-    'Mini meatballs'
+    'Cheeseburger sliders'
   ],
   fruit: [
     'Bananas',
@@ -66,15 +66,6 @@ const foodCategories = {
 
 const categoryOrder = ['protein', 'fruit', 'vegetable', 'grain', 'dairy', 'snack'];
 
-const categoryEmoji = {
-  protein: '🍗',
-  fruit: '🍓',
-  vegetable: '🥕',
-  grain: '🍞',
-  dairy: '🧀',
-  snack: '🍪'
-};
-
 function getRandomItem(items) {
   return items[Math.floor(Math.random() * items.length)];
 }
@@ -98,26 +89,13 @@ function App() {
 
   return (
     <main className="app-shell">
-      <div className="deco deco-star deco-star-1">⭐</div>
-      <div className="deco deco-star deco-star-2">✨</div>
-      <div className="deco deco-star deco-star-3">🌟</div>
-      <div className="deco deco-dot deco-dot-1" />
-      <div className="deco deco-dot deco-dot-2" />
-      <div className="deco deco-dot deco-dot-3" />
-
       <section className="lunch-card">
-        <p className="eyebrow">Yum Yum Time!</p>
-        <h1>
-          <span className="title-emoji" aria-hidden="true">🍎</span>
-          Preschool Lunch Generator
-          <span className="title-emoji" aria-hidden="true">🥪</span>
-        </h1>
-        <p className="subtitle">Tap the button for a fresh, kid-approved lunch idea!</p>
+        <p className="eyebrow">School lunch idea</p>
+        <h1>Preschool Lunch Generator</h1>
 
         <div className="menu-grid">
           {categoryOrder.map((category) => (
-            <div key={category} className={`menu-item item-${category}`}>
-              <span className="category-emoji" aria-hidden="true">{categoryEmoji[category]}</span>
+            <div key={category} className="menu-item">
               <span className="category-label">{category}</span>
               <strong>{lunchMenu[category]}</strong>
             </div>
@@ -125,8 +103,10 @@ function App() {
         </div>
 
         <button type="button" onClick={generateLunch} className="generate-button">
-          🎲 Generate another lunch!
+          Generate another lunch
         </button>
+
+        <p className="footer-credit">Made by Amber</p>
       </section>
     </main>
   );
